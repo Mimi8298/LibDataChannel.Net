@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDataChannel.Native", "LibDataChannel.Native\LibDataChannel.Native.csproj", "{548B763A-9296-4C4A-940A-857846A1CCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDataChannel", "LibDataChannel\LibDataChannel.csproj", "{76170168-723E-4B4A-9DB8-2920873597BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDataChannel.Test", "LibDataChannel.Test\LibDataChannel.Test.csproj", "{39CF579B-D723-4C3A-8E32-D42CA5EF30B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibDataChannel.Benchmark", "LibDataChannel.Benchmark\LibDataChannel.Benchmark.csproj", "{F7B57B18-A7D2-46D2-8A32-3BB25C160F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{548B763A-9296-4C4A-940A-857846A1CCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{548B763A-9296-4C4A-940A-857846A1CCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{548B763A-9296-4C4A-940A-857846A1CCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{548B763A-9296-4C4A-940A-857846A1CCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76170168-723E-4B4A-9DB8-2920873597BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76170168-723E-4B4A-9DB8-2920873597BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76170168-723E-4B4A-9DB8-2920873597BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76170168-723E-4B4A-9DB8-2920873597BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CF579B-D723-4C3A-8E32-D42CA5EF30B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CF579B-D723-4C3A-8E32-D42CA5EF30B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CF579B-D723-4C3A-8E32-D42CA5EF30B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CF579B-D723-4C3A-8E32-D42CA5EF30B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B57B18-A7D2-46D2-8A32-3BB25C160F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B57B18-A7D2-46D2-8A32-3BB25C160F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B57B18-A7D2-46D2-8A32-3BB25C160F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B57B18-A7D2-46D2-8A32-3BB25C160F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

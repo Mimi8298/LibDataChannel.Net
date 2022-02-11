@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Update="Library\datachannel.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>datachannel.dll</TargetPath>
+        </None>
+        <None Update="Library\libcrypto-3-x64.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libcrypto-3-x64.dll</TargetPath>
+        </None>
+        <None Update="Library\libssl-3-x64.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libssl-3-x64.dll</TargetPath>
+        </None>
+        <None Update="Library\libdatachannel.dylib">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libdatachannel.dylib</TargetPath>
+        </None>
+    </ItemGroup>
+    
+</Project>
