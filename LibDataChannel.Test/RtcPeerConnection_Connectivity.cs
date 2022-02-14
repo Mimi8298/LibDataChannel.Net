@@ -73,6 +73,7 @@ public class RtcPeerConnection_Connectivity
         
         wait1.WaitOne(1000);
         wait2.WaitOne(1000);
+        wait3.WaitOne(1000);
     }
     
     [TearDown]
