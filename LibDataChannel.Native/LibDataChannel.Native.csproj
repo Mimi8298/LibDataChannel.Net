@@ -5,25 +5,54 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+
+        <Title>LibDataChannel.Net.Native</Title>
+        <Authors>Mimi8298</Authors>
+        <Description>High-Performance C# bindings for libdatachannel (Windows, Linux and macOS). Only WebRTC with DataChannel is supported currently.</Description>
+        <Copyright>GNU Lesser General Public License</Copyright>
+        <RepositoryUrl>https://github.com/Mimi8298/LibDataChannel.Net</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
+        <PackageTags>libdatachannel, datachannel, webrtc, rtc, webdatachannel, datachannel</PackageTags>
+        <PackageReleaseNotes>Initial library version.</PackageReleaseNotes>
+        <AssemblyVersion>0.0.1</AssemblyVersion>
     </PropertyGroup>
+    
+    <ItemGroup>
+        <Content Include="Library\win-x64\datachannel.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <TargetPath>datachannel.dll</TargetPath>
+            <PackagePath>lib\win\datachannel.dll</PackagePath>
+            <Pack>true</Pack>
+        </Content>
+        <Content Include="Library\win-x64\libcrypto-3-x64.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <TargetPath>libcrypto-3-x64.dll</TargetPath>
+            <PackagePath>lib\win\datachannel.dll</PackagePath>
+            <Pack>true</Pack>
+        </Content>
+        <Content Include="Library\win-x64\libssl-3-x64.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <TargetPath>libssl-3-x64.dll</TargetPath>
+            <PackagePath>lib\win\datachannel.dll</PackagePath>
+            <Pack>true</Pack>
+        </Content>
+    </ItemGroup>
 
     <ItemGroup>
-        <None Update="Library\datachannel.dll">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <TargetPath>datachannel.dll</TargetPath>
-        </None>
-        <None Update="Library\libcrypto-3-x64.dll">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <TargetPath>libcrypto-3-x64.dll</TargetPath>
-        </None>
-        <None Update="Library\libssl-3-x64.dll">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-            <TargetPath>libssl-3-x64.dll</TargetPath>
-        </None>
-        <None Update="Library\libdatachannel.dylib">
-            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        <Content Include="Library\libdatachannel.dylib">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
             <TargetPath>libdatachannel.dylib</TargetPath>
-        </None>
+            <PackagePath>lib\osx\libdatachannel.dylib</PackagePath>
+            <Pack>true</Pack>
+        </Content>
     </ItemGroup>
-    
+
+    <ItemGroup>
+        <Content Include="Library\libdatachannel.so">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <TargetPath>libdatachannel.so</TargetPath>
+            <PackagePath>lib\linux\libdatachannel.so</PackagePath>
+            <Pack>true</Pack>
+        </Content>
+    </ItemGroup>
 </Project>
