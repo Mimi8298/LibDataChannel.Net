@@ -44,6 +44,7 @@ public class RtcPeerConnection_Connectivity
         
         AutoResetEvent wait1 = new AutoResetEvent(false);
         AutoResetEvent wait2 = new AutoResetEvent(false);
+        AutoResetEvent wait3 = new AutoResetEvent(false);
         
         _host.OnStateChange += state =>
         {
@@ -58,6 +59,10 @@ public class RtcPeerConnection_Connectivity
             {
                 wait2.Set();
             }
+        };
+        _remote.OnDataChannel += channel =>
+        {
+            wait3.Set();
         };
 
         _host.CreateDataChannel("test", new RtcDataChannelInit
